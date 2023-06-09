@@ -36,7 +36,7 @@ class Queue: # Menginisialisasi kelas 'Queue'
 
             newdataPC = str(input("\nPilih PC [dengan memasukkan nama pc, contoh: pc01] : "))
             newdataNama = str(input("Masukkan nama pengantre : "))
-            if newdataPC == 'PC01' or newdataPC == 'pc01':
+            if newdataPC == 'PC01' or newdataPC == 'pc01' or newdataPC == 'PC1' or newdataPC == 'pc1':
                 if "PC01" in daftarPC:
                     os.system("cls")
                     self.data.append(f"PC01 - {newdataNama}")
@@ -46,7 +46,7 @@ class Queue: # Menginisialisasi kelas 'Queue'
                 else:
                     print("Gagal menambahkan antrean baru, PC01 tidak tersedia.")
                     kembaliKeMenu2()
-            elif newdataPC == 'PC02' or newdataPC == 'pc02':
+            elif newdataPC == 'PC02' or newdataPC == 'pc02' or newdataPC == 'PC2' or newdataPC == 'pc2':
                 if "PC02" in daftarPC:
                     os.system("cls")
                     self.data.append(f"PC02 - {newdataNama}")
@@ -56,7 +56,7 @@ class Queue: # Menginisialisasi kelas 'Queue'
                 else:
                     print("Gagal menambahkan antrean baru, PC02 tidak tersedia.")
                     kembaliKeMenu2()
-            elif newdataPC == 'PC03' or newdataPC == 'pc03':
+            elif newdataPC == 'PC03' or newdataPC == 'pc03' or newdataPC == 'PC3' or newdataPC == 'pc3':
                 if "PC03" in daftarPC:
                     os.system("cls")
                     self.data.append(f"PC03 - {newdataNama}")
@@ -66,7 +66,7 @@ class Queue: # Menginisialisasi kelas 'Queue'
                 else:
                     print("Gagal menambahkan antrean baru, PC03 tidak tersedia.")
                     kembaliKeMenu2()
-            elif newdataPC == 'PC04' or newdataPC == 'pc04':
+            elif newdataPC == 'PC04' or newdataPC == 'pc04' or newdataPC == 'PC4' or newdataPC == 'pc4':
                 if "PC04" in daftarPC:
                     os.system("cls")
                     self.data.append(f"PC04 - {newdataNama}")
@@ -76,7 +76,7 @@ class Queue: # Menginisialisasi kelas 'Queue'
                 else:
                     print("Gagal menambahkan antrean baru, PC04 tidak tersedia.")
                     kembaliKeMenu2()
-            elif newdataPC == 'PC05' or newdataPC == 'pc05':
+            elif newdataPC == 'PC05' or newdataPC == 'pc05' or newdataPC == 'PC5' or newdataPC == 'pc5':
                 if "PC05" in daftarPC:
                     os.system("cls")
                     self.data.append(f"PC05 - {newdataNama}")
@@ -86,7 +86,7 @@ class Queue: # Menginisialisasi kelas 'Queue'
                 else:
                     print("Gagal menambahkan antrean baru, PC05 tidak tersedia.")
                     kembaliKeMenu2()
-            elif newdataPC == 'PC06' or newdataPC == 'pc06':
+            elif newdataPC == 'PC06' or newdataPC == 'pc06' or newdataPC == 'PC6' or newdataPC == 'pc6':
                 if "PC06" in daftarPC:
                     os.system("cls")
                     self.data.append(f"PC06 - {newdataNama}")
@@ -96,7 +96,7 @@ class Queue: # Menginisialisasi kelas 'Queue'
                 else:
                     print("Gagal menambahkan antrean baru, PC06 tidak tersedia.")
                     kembaliKeMenu2()
-            elif newdataPC == 'PC07' or newdataPC == 'pc07':
+            elif newdataPC == 'PC07' or newdataPC == 'pc07' or newdataPC == 'PC7' or newdataPC == 'pc7':
                 if "PC07" in daftarPC:
                     os.system("cls")
                     self.data.append(f"PC07 - {newdataNama}")
@@ -106,7 +106,7 @@ class Queue: # Menginisialisasi kelas 'Queue'
                 else:
                     print("Gagal menambahkan antrean baru, PC07 tidak tersedia.")
                     kembaliKeMenu2()
-            elif newdataPC == 'PC08' or newdataPC == 'pc08':
+            elif newdataPC == 'PC08' or newdataPC == 'pc08' or newdataPC == 'PC8' or newdataPC == 'pc8':
                 if "PC08" in daftarPC:
                     os.system("cls")
                     self.data.append(f"PC08 - {newdataNama}")
@@ -116,7 +116,7 @@ class Queue: # Menginisialisasi kelas 'Queue'
                 else:
                     print("Gagal menambahkan antrean baru, PC08 tidak tersedia.")
                     kembaliKeMenu2()
-            elif newdataPC == 'PC09' or newdataPC == 'pc09':
+            elif newdataPC == 'PC09' or newdataPC == 'pc09' or newdataPC == 'PC9' or newdataPC == 'pc9':
                 if "PC09" in daftarPC:
                     os.system("cls")
                     self.data.append(f"PC09 - {newdataNama}")
@@ -188,10 +188,10 @@ def menu(): # Fungsi Menu
     print("================ Program Antrean PC Warnet ================")
     print(f"\t\t\t{datetime.now().strftime('%d/%m/%Y (%H:%M)')}") # Menampilkan waktu terkini (sesuai local time) menggunakan modul datetime
     print("\nBerikut daftar Menu program yang tersedia :")
-    print("[1] Masukkan data antrean")
-    print("[2] Hapus data antrean")
-    print("[3] Melihat list data antrean")
-    print("[4] Melihat informasi data antrean")
+    print("[1] Masukkan Data Antrean")
+    print("[2] Hapus Data Antrean")
+    print("[3] Melihat Daftar Data Antrean")
+    print("[4] Melihat Informasi Data Antrean")
     print("[5] Akhiri Program Antrean PC Warnet\n")
     pilihan = input("Pilih menu [sesuai nomor urut menu] : ")
     if pilihan == "1":
@@ -203,6 +203,9 @@ def menu(): # Fungsi Menu
     elif pilihan == "4":
         Qstart.statusAntrean()
     elif pilihan == "5":
+        os.system("cls")
+        print("Terima kasih telah menggunakan Program Antrean PC Warnet, Kami menerima Kritik & Saran apabila pengguna ingin menyampaikan.")
+        time.sleep(3)
         exit()
     else:
         os.system("cls")
