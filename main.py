@@ -177,8 +177,8 @@ class Queue:
         kembaliKeMenu2()
 
 def kembaliKeMenu(detik, pesan):
-    time.sleep(detik)
     print(pesan)
+    time.sleep(detik)
     menu()
 
 def kembaliKeMenu2():
@@ -187,15 +187,15 @@ def kembaliKeMenu2():
 
 def menu():
     os.system("cls")
-    print("================ Program Antrean Billing PC Warnet ================")
+    print("================ Program Antrean PC Warnet ================")
     print(f"\t\t\t{datetime.now().strftime('%d/%m/%Y (%H:%M)')}")
     print("\nBerikut daftar Menu program yang tersedia :")
     print("[1] Masukkan data antrean")
     print("[2] Hapus data antrean")
     print("[3] Melihat list data antrean")
     print("[4] Melihat informasi data antrean")
-    print("[5] Akhiri Program Antrean Billing PC Warnet\n")
-    pilihan = input("Pilih menu [dengan nomor urut] : ")
+    print("[5] Akhiri Program Antrean PC Warnet\n")
+    pilihan = input("Pilih menu [sesuai nomor urut menu] : ")
     if pilihan == "1":
         Qstart.tambahdata()
     elif pilihan == "2":
