@@ -139,8 +139,8 @@ class Queue:
                     print("Gagal menambahkan antrean baru, PC10 tidak tersedia.")
                     kembaliKeMenu2()
             else:
-                print("Gagal menambahkan data antrean!")
-        kembaliKeMenu(3, "")
+                print("\nGagal menambahkan data antrean!\nPeriksa kembali data yang anda masukkan, apakah memenuhi/sesuai syarat atau tidak.")
+        kembaliKeMenu2()
 
     def hapusdataAntrean(self):
         os.system("cls")
@@ -157,19 +157,19 @@ class Queue:
         os.system("cls")
         print("================ List data antrean ================\n")
         if self.isEmpty():
-            print("Data antrean : \nTidak terdapat satupun data Antrean...")
+            print("[Data antrean]\nTidak terdapat satupun data Antrean...")
         else:
             datalist = '\n'.join(self.data)
-            print(f"Data antrean : \n{datalist}")
+            print(f"[Data antrean]\n{datalist}")
         kembaliKeMenu2()
 
     def statusAntrean(self):
         os.system("cls")
         print("================ Status antrean ================\n")
-        print(f"Antrean saat ini : {self.current_size}")
         print(f"Batas maksimum antrean : {self.size}")
+        print(f"Antrean saat ini : {self.current_size}")
         if self.isEmpty():
-            print("\nData antrean : \nTidak terdapat satupun data Antrean...")
+            print("\n[Data antrean]\nTidak terdapat satupun data Antrean...")
         else:
             print("\nKeterangan lanjutan antrean :")
             print(f"Antrean terdepan : {self.data[0]}")
@@ -209,7 +209,7 @@ def menu():
     else:
         os.system("cls")
         print(f"Pilihan {pilihan} tidak ditemukan.")
-        time.sleep(3)
+        time.sleep(1)
         menu()
 
 Qstart = Queue(maxQueue)
