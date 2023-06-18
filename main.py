@@ -146,7 +146,7 @@ class Queue: # Menginisialisasi kelas 'Queue'
         if self.isEmpty():
             kembaliKeMenu(3, "Maaf, antrean kosong. Tidak ada data antrean yang dapat dihapus.")
         else:
-            datakeluar = self.data.pop() # Menghapus data antrean dengan menggunakan pop()
+            datakeluar = self.data.pop(0) # Menghapus data antrean dengan menggunakan pop() lalu menambahkan spesifik no index nya
             self.current_size = len(self.data) 
             daftarPC.append(f"{datakeluar[0:4]}")  # Menambahkan kembali data pc yang terhapus ke list daftarPC
             kembaliKeMenu(3, f"\nBerhasil menghapus data antrean, dengan data sebagai berikut:\n{datakeluar}")
